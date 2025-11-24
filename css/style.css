@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* body {
+  position: relative;
+} */
+svg {
+  width: 4rem;
+  height: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+
+.bg {
+  position: absolute;
+}
+
+.bg_uno {
+  width: 70rem;
+  height: 100rem;
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+
+.bg_dos {
+  width: 55rem;
+  height: 100rem;
+  bottom: 0;
+  right: 0;
+  background-color: blue;
+  border-radius: 45rem 0 0 0;
+}
+
+.chat {
+  width: 110rem;
+  height: 100rem;
+  border: solid 20px black;
+  border-radius: 8rem;
+  background-color: hsl(270, 20%, 96%);
+}
+
+.chat_head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  border-radius: 4rem 4rem 1rem 1rem;
+  background-image: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  height: 10rem;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.profile_img {
+  width: 5rem;
+  height: auto;
+  border: solid 2px hsl(0, 100%, 100%);
+  border-radius: 50%;
+}
