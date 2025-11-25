@@ -12,9 +12,10 @@ html {
   box-sizing: border-box;
 }
 
-/* body {
-  position: relative;
-} */
+body {
+  background-color: hsl(270, 20%, 96%);
+  /* position: relative; */
+}
 svg {
   width: 4rem;
   height: 3rem;
@@ -28,12 +29,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
+  gap: 15rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* text-align: center; */
 }
 
 .bg {
@@ -41,28 +41,34 @@ main {
 }
 
 .bg_uno {
-  width: 70rem;
-  height: 100rem;
-  background-color: red;
+  width: 95rem;
+  height: 120rem;
   top: 0;
-  left: 0;
+  left: -2%;
+  border-radius: 0 0 100rem 90rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
 }
 
 .bg_dos {
-  width: 55rem;
-  height: 100rem;
+  width: 60rem;
+  height: 110rem;
   bottom: 0;
   right: 0;
-  background-color: blue;
+  background-color: hsla(276, 100%, 81%, 0.072);
   border-radius: 45rem 0 0 0;
 }
 
 .chat {
-  width: 110rem;
+  width: fit-content;
   height: 100rem;
-  border: solid 20px black;
+  border: solid 20px hsl(0, 100%, 100%);
   border-radius: 8rem;
   background-color: hsl(270, 20%, 96%);
+  box-shadow: 5px 30px 30px 15px hsla(271, 36%, 24%, 0.12);
 }
 
 .chat_head {
@@ -71,8 +77,12 @@ main {
   justify-content: center;
   gap: 20rem;
   border-radius: 4rem 4rem 1rem 1rem;
-  background-image: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
-  height: 10rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  height: 12rem;
 }
 .profile {
   display: flex;
@@ -92,4 +102,34 @@ main {
   height: auto;
   border: solid 2px hsl(0, 100%, 100%);
   border-radius: 50%;
+}
+
+.profile_name {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.profile_text {
+  font-size: 1.4rem;
+  color: hsl(276, 100%, 81%);
+}
+
+.dog_img img {
+  width: 7rem;
+  height: auto;
+}
+
+.info h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: hsl(271, 36%, 24%);
+}
+
+.info p {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: hsl(270, 7%, 64%);
+  /* letter-spacing: 1px; */
+  text-align: left;
 }
