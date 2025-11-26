@@ -17,8 +17,10 @@ body {
   /* position: relative; */
 }
 svg {
-  width: 4rem;
-  height: 3rem;
+  width: 3rem;
+  height: 4rem;
+  stroke: #fff;
+  color: #fff;
 }
 
 p {
@@ -44,9 +46,9 @@ main {
   width: 95rem;
   height: 120rem;
   top: 0;
-  left: -2%;
+  /* left: -2%; */
   border-radius: 0 0 100rem 90rem;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right,
     hsl(264, 100%, 61%),
     hsl(293, 100%, 63%)
@@ -65,10 +67,10 @@ main {
 .chat {
   width: fit-content;
   height: 100rem;
-  border: solid 20px hsl(0, 100%, 100%);
-  border-radius: 8rem;
+  border: solid 17px hsl(0, 100%, 100%);
+  border-radius: 6rem;
   background-color: hsl(270, 20%, 96%);
-  box-shadow: 5px 30px 30px 15px hsla(271, 36%, 24%, 0.12);
+  box-shadow: 0 20px 30px 20px hsla(271, 36%, 24%, 0.033);
 }
 
 .chat_head {
@@ -77,12 +79,15 @@ main {
   justify-content: center;
   gap: 20rem;
   border-radius: 4rem 4rem 1rem 1rem;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right,
     hsl(264, 100%, 61%),
     hsl(293, 100%, 63%)
   );
   height: 12rem;
+
+  margin-bottom: 2rem;
+  box-shadow: -2px 5px 15px 0 hsla(271, 36%, 24%, 0.322);
 }
 .profile {
   display: flex;
@@ -132,4 +137,7 @@ main {
   color: hsl(270, 7%, 64%);
   /* letter-spacing: 1px; */
   text-align: left;
+}
+.replies {
+  text-align: right;
 }
