@@ -8,7 +8,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   box-sizing: border-box;
 }
 
@@ -23,9 +23,9 @@ svg {
   color: #fff;
 }
 
-p {
+/* p {
   font-size: 1.5rem;
-}
+} */
 
 main {
   display: flex;
@@ -64,13 +64,24 @@ main {
   border-radius: 45rem 0 0 0;
 }
 
+.box {
+  width: 30rem;
+  height: 6rem;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 0rem 0rem 3rem 3rem;
+  top: -2%;
+  left: 17%;
+}
+
 .chat {
   width: 50%;
   height: auto;
-  border: solid 15px hsl(0, 100%, 100%);
+  border: solid 15px hsl(0, 0%, 97%);
   border-radius: 6rem;
   background-color: hsl(270, 20%, 96%);
   box-shadow: 0 20px 30px 20px hsla(271, 36%, 24%, 0.033);
+  position: relative;
 }
 
 .chat_head {
@@ -84,15 +95,15 @@ main {
     hsl(264, 100%, 61%),
     hsl(293, 100%, 63%)
   );
-  height: 12rem;
-  padding: 1em 1em 1em 1em;
+  height: 14rem;
+  padding: 5em 1em 1em 1em;
   /* margin-bottom: 2rem; */
   box-shadow: -4px 5px 15px 0 hsla(271, 36%, 24%, 0.322);
 }
 
 .chat_body {
   padding: 2em 1.5rem 1.5rem 1.5rem;
-  border: 2px ridge hsla(268, 7%, 64%, 0.164);
+  border: 2px ridge hsla(268, 7%, 64%, 0.103);
   border-top: none;
   border-radius: 0 0 2.8rem 2.8rem;
 }
@@ -113,17 +124,18 @@ main {
 .profile_img {
   width: 5rem;
   height: auto;
-  border: ridge 2px hsl(0, 100%, 100%);
+  border: solid 2px hsl(0, 100%, 100%);
   border-radius: 50%;
 }
 
 .profile_name {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .profile_text {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: hsl(276, 100%, 81%);
 }
 
@@ -145,15 +157,16 @@ main {
 }
 
 .info h1 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   margin-bottom: 2rem;
   color: hsl(271, 36%, 24%);
 }
 
 .info p {
   font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.7;
+  /* font-weight: 500; */
+  line-height: 1.8;
+  letter-spacing: 1px;
   color: hsl(270, 7%, 64%);
   /* letter-spacing: 1px; */
   text-align: left;
@@ -168,13 +181,13 @@ main {
 }
 
 .send {
-  width: 27rem;
+  width: 29rem;
   height: auto;
   background-color: hsla(271, 36%, 24%, 0.082);
   margin-bottom: 2rem;
   padding: 1em;
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 550;
   color: hsl(276, 55%, 52%);
   border-radius: 1.5rem 1.5rem 1.5rem 0rem;
 }
@@ -206,8 +219,8 @@ main {
   padding: 0em 1.2em;
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 1px;
+  /* font-weight: 500; */
+  /* letter-spacing: 1px; */
   background: linear-gradient(
     to right,
     hsl(264, 100%, 61%),
