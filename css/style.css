@@ -31,7 +31,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 20rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,9 +65,9 @@ main {
 }
 
 .chat {
-  width: fit-content;
-  height: 100rem;
-  border: solid 17px hsl(0, 100%, 100%);
+  width: 50%;
+  height: auto;
+  border: solid 15px hsl(0, 100%, 100%);
   border-radius: 6rem;
   background-color: hsl(270, 20%, 96%);
   box-shadow: 0 20px 30px 20px hsla(271, 36%, 24%, 0.033);
@@ -77,7 +77,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20rem;
+  gap: 17rem;
   border-radius: 4rem 4rem 1rem 1rem;
   background: linear-gradient(
     to right,
@@ -85,10 +85,18 @@ main {
     hsl(293, 100%, 63%)
   );
   height: 12rem;
-
-  margin-bottom: 2rem;
-  box-shadow: -2px 5px 15px 0 hsla(271, 36%, 24%, 0.322);
+  padding: 1em 1em 1em 1em;
+  /* margin-bottom: 2rem; */
+  box-shadow: -4px 5px 15px 0 hsla(271, 36%, 24%, 0.322);
 }
+
+.chat_body {
+  padding: 2em 1.5rem 1.5rem 1.5rem;
+  border: 2px ridge hsla(268, 7%, 64%, 0.164);
+  border-top: none;
+  border-radius: 0 0 2.8rem 2.8rem;
+}
+
 .profile {
   display: flex;
   align-items: center;
@@ -105,7 +113,7 @@ main {
 .profile_img {
   width: 5rem;
   height: auto;
-  border: solid 2px hsl(0, 100%, 100%);
+  border: ridge 2px hsl(0, 100%, 100%);
   border-radius: 50%;
 }
 
@@ -119,9 +127,21 @@ main {
   color: hsl(276, 100%, 81%);
 }
 
+.dog_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .dog_img img {
-  width: 7rem;
+  width: 8rem;
   height: auto;
+  border-radius: 2rem;
+}
+
+.info {
+  width: 50%;
 }
 
 .info h1 {
@@ -131,7 +151,7 @@ main {
 }
 
 .info p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.7;
   color: hsl(270, 7%, 64%);
@@ -139,5 +159,121 @@ main {
   text-align: left;
 }
 .replies {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  /* text-align: right; */
+}
+
+.send {
+  width: 27rem;
+  height: auto;
+  background-color: hsla(271, 36%, 24%, 0.082);
+  margin-bottom: 2rem;
+  padding: 1em;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: hsl(276, 55%, 52%);
+  border-radius: 1.5rem 1.5rem 1.5rem 0rem;
+}
+
+.reply {
+  width: fit-content;
+  height: auto;
+  background-color: #fff;
+  color: hsl(270, 7%, 64%);
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: 550;
+  padding: 1em 1.2em;
+  border-radius: 2rem 2rem 0rem 2rem;
+  /* margin-right: -10rem; */
+}
+
+.reply:last-child {
+  padding: 1em 1em;
+}
+
+.chat_radio {
+  margin-bottom: 3rem;
+}
+
+.radio {
+  width: 30rem;
+  height: 7rem;
+  padding: 0em 1.2em;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 2rem; */
+  border-radius: 1.9rem 1.9rem 1.9rem 0.2rem;
+}
+
+.radio h3 {
+  font-size: 2.5rem;
+  letter-spacing: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  position: relative;
+  padding-left: 3em;
+  /* cursor: pointer; */
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  margin-top: -0.5rem;
+  border: solid 2px hsl(289, 100%, 72%);
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: hsl(206, 6%, 79%);
+  width: 100%;
+  height: 6rem;
+  padding: 1.5em;
+  border-radius: 4rem;
+}
+
+.chat_box p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-left: 1em;
+}
+
+.chat_btn {
+  background-color: hsl(271, 36%, 24%);
+  width: 4.2rem;
+  height: 4.2rem;
+  text-align: center;
+  border-radius: 50%;
 }
