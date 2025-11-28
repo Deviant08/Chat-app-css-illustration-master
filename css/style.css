@@ -31,6 +31,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
   gap: 20rem;
   position: absolute;
   top: 50%;
@@ -69,9 +70,9 @@ main {
   height: 6rem;
   background-color: #fff;
   position: absolute;
-  border-radius: 0rem 0rem 3rem 3rem;
-  top: -2%;
-  left: 17%;
+  border-radius: 0.2rem 0.2rem 3rem 3rem;
+  top: -1.8%;
+  left: 20%;
 }
 
 .chat {
@@ -156,6 +157,12 @@ main {
   width: 50%;
 }
 
+.info_h1 {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1rem;
+}
 .info h1 {
   font-size: 5.5rem;
   margin-bottom: 2rem;
@@ -249,6 +256,9 @@ input[type="radio"] {
 label {
   position: relative;
   padding-left: 3em;
+  color: hsl(276, 100%, 81%);
+  font-size: 1.6rem;
+  font-weight: 600;
   /* cursor: pointer; */
 }
 
@@ -293,4 +303,87 @@ label::before {
   height: 4.2rem;
   text-align: center;
   border-radius: 50%;
+}
+
+@media (max-width: 760px) {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    overflow: hidden;
+    positsion: relative;
+  }
+  .bg {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+  }
+
+  .bg_uno {
+    width: 45rem;
+    /* top: 0; */
+    left: -10%;
+  }
+
+  .bg_dos {
+    /* bottom: -30%; */
+  }
+  main {
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .box {
+    left: 17%;
+  }
+
+  .chat {
+    /* height: 50%; */
+    width: 50rem;
+    height: 100rem;
+    border-width: 10px;
+  }
+
+  .chat_head {
+    gap: 15rem;
+  }
+
+  .chat_body {
+    height: auto;
+  }
+
+  .send {
+    width: 25rem;
+    padding: 0.5em;
+  }
+
+  .dog_img img {
+    width: 7rem;
+    height: auto;
+  }
+
+  .info {
+    width: 100%;
+    /* text-align: center; */
+    /* height: 50%; */
+  }
+
+  .info h1 {
+    font-size: 8rem;
+  }
+
+  .info p {
+    text-align: center;
+    letter-spacing: normal;
+    font-size: 2.4rem;
+    font-weight: 550;
+    line-height: 2;
+  }
 }
