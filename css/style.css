@@ -318,7 +318,7 @@ label::before {
 
   body {
     overflow: hidden;
-    positsion: relative;
+    position: relative;
   }
   .bg {
     position: absolute;
