@@ -317,7 +317,7 @@ label::before {
   }
 
   body {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
   }
   .bg {
