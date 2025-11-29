@@ -312,10 +312,6 @@ label::before {
     font-size: 50%;
   }
 
-  body {
-    /* overflow: hidden; */
-    /* position: relative; */
-  }
   .bg {
     /* position: absolute; */
     height: 50%;
@@ -324,32 +320,31 @@ label::before {
 
   .bg_uno {
     width: 40rem;
-    /* top: 0; */
     left: -10%;
   }
 
   main {
     flex-direction: column;
-    bottom: 0;
-    gap: 10rem;
+    gap: 6rem;
   }
 
   .box {
     left: 22%;
     width: 20rem;
     height: 4rem;
+    border-radius: 0.2px 0.2px 10px 10px;
   }
 
   .chat {
     /* height: 50%; */
     width: 40rem;
-    height: 80rem;
+    height: 75rem;
     border-width: 10px;
   }
 
   .chat_head {
-    height: 10rem;
-    padding: 4em 1em 1em 1em;
+    height: 8rem;
+    padding: 6em 1em 3em 1em;
     gap: 10rem;
   }
 
@@ -363,10 +358,10 @@ label::before {
     border-width: 0.5px;
   }
   .profile_name {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .profile_text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .chat_body {
@@ -379,14 +374,18 @@ label::before {
     padding: 0.7em;
   }
 
+  .send_tres {
+    margin-bottom: 0.5rem;
+  }
+
   .dog_img img {
-    width: 6rem;
+    width: 5rem;
     height: auto;
   }
 
   .reply {
-    font-size: 1.3rem;
-    padding: 1rem;
+    font-size: 1.2rem;
+    padding: 0.8rem;
     margin-bottom: 0.5rem;
   }
 
@@ -397,11 +396,12 @@ label::before {
   .radio {
     width: 23rem;
     height: 4.4rem;
+    margin-bottom: 1.5rem;
   }
 
   label {
     font-size: 8px;
-    padding-left: 2em;
+    padding-left: 2.5em;
   }
 
   label::before {
@@ -414,7 +414,7 @@ label::before {
   }
 
   .radio h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .info {
