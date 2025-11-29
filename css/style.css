@@ -364,9 +364,9 @@ label::before {
     font-size: 1.3rem;
   }
 
-  .chat_body {
+  /* .chat_body {
     height: auto;
-  }
+  } */
 
   .send {
     font-size: 1.3rem;
