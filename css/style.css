@@ -313,7 +313,7 @@ label::before {
   }
 
   body {
-    overflow: hidden;
+    /* overflow: hidden; */
     /* position: relative; */
   }
   .bg {
@@ -328,9 +328,6 @@ label::before {
     left: -10%;
   }
 
-  .bg_dos {
-    /* bottom: -30%; */
-  }
   main {
     flex-direction: column;
     bottom: 0;
