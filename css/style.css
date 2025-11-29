@@ -229,24 +229,20 @@ main {
   padding: 0em 1.2em;
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  /* font-weight: 500; */
-  /* letter-spacing: 1px; */
   background: linear-gradient(
     to right,
     hsl(264, 100%, 61%),
     hsl(293, 100%, 63%)
   );
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 2rem; */
   border-radius: 1.9rem 1.9rem 1.9rem 0.2rem;
 }
 
 .radio h3 {
+  color: #fff;
   font-size: 2.5rem;
-  letter-spacing: 0;
 }
 
 input[type="radio"] {
@@ -342,7 +338,7 @@ label::before {
   }
 
   .box {
-    left: 20%;
+    left: 22%;
     width: 20rem;
     height: 4rem;
   }
@@ -355,7 +351,25 @@ label::before {
   }
 
   .chat_head {
-    gap: 6rem;
+    height: 10rem;
+    padding: 4em 1em 1em 1em;
+    gap: 10rem;
+  }
+
+  svg {
+    width: 2rem;
+  }
+
+  .profile_img {
+    width: 4rem;
+    height: auto;
+    border-width: 0.5px;
+  }
+  .profile_name {
+    font-size: 1.7rem;
+  }
+  .profile_text {
+    font-size: 1.4rem;
   }
 
   .chat_body {
@@ -363,13 +377,47 @@ label::before {
   }
 
   .send {
-    width: 25rem;
-    padding: 0.5em;
+    font-size: 1.3rem;
+    width: 21rem;
+    padding: 0.7em;
   }
 
   .dog_img img {
-    width: 7rem;
+    width: 6rem;
     height: auto;
+  }
+
+  .reply {
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .reply_uno {
+    margin-bottom: 3rem;
+  }
+
+  .radio {
+    width: 23rem;
+    height: 4.4rem;
+  }
+
+  label {
+    font-size: 8px;
+    padding-left: 2em;
+  }
+
+  label::before {
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    left: 0;
+    border-width: 1px;
+    margin-top: -1rem;
+  }
+
+  .radio h3 {
+    font-size: 2rem;
   }
 
   .info {
@@ -378,14 +426,14 @@ label::before {
     /* height: 50%; */
   }
 
-  /* .info h1 {
-    font-size: 8rem;
-  } */
+  .info h1 {
+    font-size: 5rem;
+  }
 
   .info p {
     text-align: center;
     letter-spacing: normal;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 550;
     line-height: 2;
   }
