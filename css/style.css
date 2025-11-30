@@ -339,7 +339,7 @@ label::before {
   .chat {
     /* height: 50%; */
     width: 40rem;
-    height: 75rem;
+    height: unset;
     border-width: 10px;
   }
 
